@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo" />
+        <module name="log4j" />
+        <module name="log4j2" />
+        <module name="logback" />
+        <module name="logs" />
+        <module name="quickstart" />
+        <module name="restful" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="3.logs" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="log4j" target="1.8" />
+      <module name="log4j2" target="1.8" />
+      <module name="logback" target="1.8" />
+      <module name="logs" target="1.8" />
+      <module name="quickstart" target="1.8" />
+      <module name="restful" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
