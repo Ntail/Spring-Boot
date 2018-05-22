@@ -1,0 +1,277 @@
+[22:27:53:750] [INFO] -org.hibernate.validator.internal.util.Version.<clinit>(Version.java:30) -HV000001: Hibernate Validator 5.2.5.Final
+[22:27:53:785] [INFO] -org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) -Starting Log4j2Application on USNQYV2Z18HRA1K with PID 3012 (F:\git\Spring-Boot\demo\3.logs\log4j2\target\classes started by Administrator in F:\git\Spring-Boot\demo)
+[22:27:53:795] [INFO] -org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:666) -The following profiles are active: dev
+[22:27:54:189] [INFO] -org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582) -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22f4e671: startup date [Tue May 22 22:27:54 CST 2018]; root of context hierarchy
+[22:27:57:724] [INFO] -org.eclipse.jetty.util.log.Log.initialized(Log.java:192) -Logging initialized @20531ms
+[22:27:58:483] [INFO] -org.springframework.boot.context.embedded.jetty.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer(JettyEmbeddedServletContainerFactory.java:173) -Server initialized with port: 80
+[22:27:58:501] [INFO] -org.eclipse.jetty.server.Server.doStart(Server.java:346) -jetty-9.3.18.v20170406
+[22:27:59:038] [INFO] -org.eclipse.jetty.server.handler.ContextHandler$Context.log(ContextHandler.java:2167) -Initializing Spring embedded WebApplicationContext
+[22:27:59:039] [INFO] -org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.prepareEmbeddedWebApplicationContext(EmbeddedWebApplicationContext.java:276) -Root WebApplicationContext: initialization completed in 4878 ms
+[22:27:59:233] [INFO] -org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup(ServletRegistrationBean.java:190) -Mapping servlet: 'dispatcherServlet' to [/]
+[22:27:59:242] [INFO] -org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) -Mapping filter: 'characterEncodingFilter' to: [/*]
+[22:27:59:252] [INFO] -org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[22:27:59:252] [INFO] -org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[22:27:59:263] [INFO] -org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) -Mapping filter: 'requestContextFilter' to: [/*]
+[22:28:00:185] [INFO] -org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:781) -Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@24370802{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.3787331115425138300.80/],AVAILABLE}
+[22:28:00:196] [INFO] -org.eclipse.jetty.server.Server.doStart(Server.java:414) -Started @22997ms
+[22:28:00:234] [ERROR] -org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:370) -Properties configuration failed validation
+[22:28:00:234] [ERROR] -org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:373) -Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:28:00:245] [WARN] -org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'standardJacksonObjectMapperBuilderCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration.class]: Unsatisfied dependency expressed through method 'standardJacksonObjectMapperBuilderCustomizer' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties': Could not bind properties to JacksonProperties (prefix=spring.jackson, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:28:00:300] [INFO] -org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:910) -Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@24370802{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.3787331115425138300.80/],UNAVAILABLE}
+[22:28:00:309] [INFO] -org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer.logAutoConfigurationReport(AutoConfigurationReportLoggingInitializer.java:101) -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[22:28:00:321] [ERROR] -org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:42) -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.autoconfigure.jackson.JacksonProperties@46a7f1ff failed:
+
+    Property: spring.jackson.timeZone
+    Value: Asia/Wuhan
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]
+
+
+Action:
+
+Update your application's configuration
+
+[22:31:53:927] [INFO] -org.hibernate.validator.internal.util.Version.<clinit>(Version.java:30) -HV000001: Hibernate Validator 5.2.5.Final
+[22:31:53:928] [INFO] -org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) -Starting Log4j2Application on USNQYV2Z18HRA1K with PID 5712 (F:\git\Spring-Boot\demo\3.logs\log4j2\target\classes started by Administrator in F:\git\Spring-Boot\demo)
+[22:31:53:963] [INFO] -org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:666) -The following profiles are active: dev
+[22:31:54:392] [INFO] -org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582) -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@495aa22d: startup date [Tue May 22 22:31:54 CST 2018]; root of context hierarchy
+[22:31:57:856] [INFO] -org.eclipse.jetty.util.log.Log.initialized(Log.java:192) -Logging initialized @23279ms
+[22:31:58:397] [INFO] -org.springframework.boot.context.embedded.jetty.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer(JettyEmbeddedServletContainerFactory.java:173) -Server initialized with port: 80
+[22:31:58:416] [INFO] -org.eclipse.jetty.server.Server.doStart(Server.java:346) -jetty-9.3.18.v20170406
+[22:31:58:820] [INFO] -org.eclipse.jetty.server.handler.ContextHandler$Context.log(ContextHandler.java:2167) -Initializing Spring embedded WebApplicationContext
+[22:31:58:820] [INFO] -org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.prepareEmbeddedWebApplicationContext(EmbeddedWebApplicationContext.java:276) -Root WebApplicationContext: initialization completed in 4484 ms
+[22:31:59:009] [INFO] -org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup(ServletRegistrationBean.java:190) -Mapping servlet: 'dispatcherServlet' to [/]
+[22:31:59:015] [INFO] -org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) -Mapping filter: 'characterEncodingFilter' to: [/*]
+[22:31:59:017] [INFO] -org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[22:31:59:019] [INFO] -org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[22:31:59:021] [INFO] -org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) -Mapping filter: 'requestContextFilter' to: [/*]
+[22:31:59:634] [INFO] -org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:781) -Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@1e5fb438{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.7478983043372507421.80/],AVAILABLE}
+[22:31:59:644] [INFO] -org.eclipse.jetty.server.Server.doStart(Server.java:414) -Started @25068ms
+[22:31:59:689] [ERROR] -org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:370) -Properties configuration failed validation
+[22:31:59:714] [ERROR] -org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:373) -Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:31:59:716] [WARN] -org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'standardJacksonObjectMapperBuilderCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration.class]: Unsatisfied dependency expressed through method 'standardJacksonObjectMapperBuilderCustomizer' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties': Could not bind properties to JacksonProperties (prefix=spring.jackson, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:31:59:782] [INFO] -org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:910) -Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@1e5fb438{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.7478983043372507421.80/],UNAVAILABLE}
+[22:31:59:793] [INFO] -org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer.logAutoConfigurationReport(AutoConfigurationReportLoggingInitializer.java:101) -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[22:31:59:814] [ERROR] -org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:42) -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.autoconfigure.jackson.JacksonProperties@1f6b102b failed:
+
+    Property: spring.jackson.timeZone
+    Value: Asia/Wuhan
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]
+
+
+Action:
+
+Update your application's configuration
+
+[22:32:23:258] [INFO] -org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) -Starting Log4j2Application on USNQYV2Z18HRA1K with PID 5980 (F:\git\Spring-Boot\demo\3.logs\log4j2\target\classes started by Administrator in F:\git\Spring-Boot\demo)
+[22:32:23:260] [INFO] -org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:666) -The following profiles are active: dev
+[22:32:23:276] [INFO] -org.hibernate.validator.internal.util.Version.<clinit>(Version.java:30) -HV000001: Hibernate Validator 5.2.5.Final
+[22:32:23:324] [INFO] -org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582) -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@75b636d7: startup date [Tue May 22 22:32:23 CST 2018]; root of context hierarchy
+[22:32:24:538] [INFO] -org.eclipse.jetty.util.log.Log.initialized(Log.java:192) -Logging initialized @4307ms
+[22:32:24:683] [INFO] -org.springframework.boot.context.embedded.jetty.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer(JettyEmbeddedServletContainerFactory.java:173) -Server initialized with port: 80
+[22:32:24:685] [INFO] -org.eclipse.jetty.server.Server.doStart(Server.java:346) -jetty-9.3.18.v20170406
+[22:32:24:790] [INFO] -org.eclipse.jetty.server.handler.ContextHandler$Context.log(ContextHandler.java:2167) -Initializing Spring embedded WebApplicationContext
+[22:32:24:791] [INFO] -org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.prepareEmbeddedWebApplicationContext(EmbeddedWebApplicationContext.java:276) -Root WebApplicationContext: initialization completed in 1479 ms
+[22:32:24:901] [INFO] -org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup(ServletRegistrationBean.java:190) -Mapping servlet: 'dispatcherServlet' to [/]
+[22:32:24:911] [INFO] -org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) -Mapping filter: 'characterEncodingFilter' to: [/*]
+[22:32:24:911] [INFO] -org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[22:32:24:921] [INFO] -org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[22:32:24:923] [INFO] -org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) -Mapping filter: 'requestContextFilter' to: [/*]
+[22:32:25:236] [INFO] -org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:781) -Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@172b5dab{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.9123841993504639511.80/],AVAILABLE}
+[22:32:25:246] [INFO] -org.eclipse.jetty.server.Server.doStart(Server.java:414) -Started @5015ms
+[22:32:25:283] [ERROR] -org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:370) -Properties configuration failed validation
+[22:32:25:283] [ERROR] -org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:373) -Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:32:25:285] [WARN] -org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'standardJacksonObjectMapperBuilderCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration.class]: Unsatisfied dependency expressed through method 'standardJacksonObjectMapperBuilderCustomizer' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties': Could not bind properties to JacksonProperties (prefix=spring.jackson, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:32:25:304] [INFO] -org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:910) -Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@172b5dab{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.9123841993504639511.80/],UNAVAILABLE}
+[22:32:25:312] [INFO] -org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer.logAutoConfigurationReport(AutoConfigurationReportLoggingInitializer.java:101) -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[22:32:25:318] [ERROR] -org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:42) -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.autoconfigure.jackson.JacksonProperties@c47e030 failed:
+
+    Property: spring.jackson.timeZone
+    Value: Asia/Wuhan
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]
+
+
+Action:
+
+Update your application's configuration
+
+[22:36:42:566] [INFO] - org.hibernate.validator.internal.util.Version.<clinit>(Version.java:30) - HV000001: Hibernate Validator 5.2.5.Final
+[22:36:42:582] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting Log4j2Application on USNQYV2Z18HRA1K with PID 6212 (F:\git\Spring-Boot\demo\3.logs\log4j2\target\classes started by Administrator in F:\git\Spring-Boot\demo)
+[22:36:42:583] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:666) - The following profiles are active: dev
+[22:36:42:658] [INFO] - org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582) - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b8e6254: startup date [Tue May 22 22:36:42 CST 2018]; root of context hierarchy
+[22:36:43:869] [INFO] - org.eclipse.jetty.util.log.Log.initialized(Log.java:192) - Logging initialized @4163ms
+[22:36:44:018] [INFO] - org.springframework.boot.context.embedded.jetty.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer(JettyEmbeddedServletContainerFactory.java:173) - Server initialized with port: 80
+[22:36:44:018] [INFO] - org.eclipse.jetty.server.Server.doStart(Server.java:346) - jetty-9.3.18.v20170406
+[22:36:44:135] [INFO] - org.eclipse.jetty.server.handler.ContextHandler$Context.log(ContextHandler.java:2167) - Initializing Spring embedded WebApplicationContext
+[22:36:44:135] [INFO] - org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.prepareEmbeddedWebApplicationContext(EmbeddedWebApplicationContext.java:276) - Root WebApplicationContext: initialization completed in 1480 ms
+[22:36:44:252] [INFO] - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup(ServletRegistrationBean.java:190) - Mapping servlet: 'dispatcherServlet' to [/]
+[22:36:44:262] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'characterEncodingFilter' to: [/*]
+[22:36:44:262] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[22:36:44:262] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[22:36:44:273] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'requestContextFilter' to: [/*]
+[22:36:44:583] [INFO] - org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:781) - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@2f6253c8{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.6238422380648341503.80/],AVAILABLE}
+[22:36:44:585] [INFO] - org.eclipse.jetty.server.Server.doStart(Server.java:414) - Started @4878ms
+[22:36:44:621] [ERROR] - org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:370) - Properties configuration failed validation
+[22:36:44:622] [ERROR] - org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:373) - Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:36:44:624] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'standardJacksonObjectMapperBuilderCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration.class]: Unsatisfied dependency expressed through method 'standardJacksonObjectMapperBuilderCustomizer' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties': Could not bind properties to JacksonProperties (prefix=spring.jackson, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:36:44:639] [INFO] - org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:910) - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@2f6253c8{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.6238422380648341503.80/],UNAVAILABLE}
+[22:36:44:647] [INFO] - org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer.logAutoConfigurationReport(AutoConfigurationReportLoggingInitializer.java:101) - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[22:36:44:647] [ERROR] - org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:42) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.autoconfigure.jackson.JacksonProperties@2b90173d failed:
+
+    Property: spring.jackson.timeZone
+    Value: Asia/Wuhan
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]
+
+
+Action:
+
+Update your application's configuration
+
+[22:37:01:208] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting Log4j2Application on USNQYV2Z18HRA1K with PID 6852 (F:\git\Spring-Boot\demo\3.logs\log4j2\target\classes started by Administrator in F:\git\Spring-Boot\demo)
+[22:37:01:208] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:666) - The following profiles are active: dev
+[22:37:01:416] [INFO] - org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582) - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@495aa22d: startup date [Tue May 22 22:37:01 CST 2018]; root of context hierarchy
+[22:37:01:496] [INFO] - org.hibernate.validator.internal.util.Version.<clinit>(Version.java:30) - HV000001: Hibernate Validator 5.2.5.Final
+[22:37:02:896] [INFO] - org.eclipse.jetty.util.log.Log.initialized(Log.java:192) - Logging initialized @4408ms
+[22:37:03:049] [INFO] - org.springframework.boot.context.embedded.jetty.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer(JettyEmbeddedServletContainerFactory.java:173) - Server initialized with port: 80
+[22:37:03:060] [INFO] - org.eclipse.jetty.server.Server.doStart(Server.java:346) - jetty-9.3.18.v20170406
+[22:37:03:177] [INFO] - org.eclipse.jetty.server.handler.ContextHandler$Context.log(ContextHandler.java:2167) - Initializing Spring embedded WebApplicationContext
+[22:37:03:178] [INFO] - org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.prepareEmbeddedWebApplicationContext(EmbeddedWebApplicationContext.java:276) - Root WebApplicationContext: initialization completed in 1762 ms
+[22:37:03:288] [INFO] - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup(ServletRegistrationBean.java:190) - Mapping servlet: 'dispatcherServlet' to [/]
+[22:37:03:288] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'characterEncodingFilter' to: [/*]
+[22:37:03:298] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[22:37:03:298] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[22:37:03:298] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'requestContextFilter' to: [/*]
+[22:37:03:605] [INFO] - org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:781) - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@1c42ef6d{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.270824235149011044.80/],AVAILABLE}
+[22:37:03:606] [INFO] - org.eclipse.jetty.server.Server.doStart(Server.java:414) - Started @5118ms
+[22:37:03:639] [ERROR] - org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:370) - Properties configuration failed validation
+[22:37:03:639] [ERROR] - org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:373) - Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:37:03:639] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'standardJacksonObjectMapperBuilderCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration.class]: Unsatisfied dependency expressed through method 'standardJacksonObjectMapperBuilderCustomizer' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties': Could not bind properties to JacksonProperties (prefix=spring.jackson, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:37:03:661] [INFO] - org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:910) - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@1c42ef6d{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.270824235149011044.80/],UNAVAILABLE}
+[22:37:03:664] [INFO] - org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer.logAutoConfigurationReport(AutoConfigurationReportLoggingInitializer.java:101) - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[22:37:03:675] [ERROR] - org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:42) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.autoconfigure.jackson.JacksonProperties@8017eca failed:
+
+    Property: spring.jackson.timeZone
+    Value: Asia/Wuhan
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]
+
+
+Action:
+
+Update your application's configuration
+
+[22:38:32:084] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting Log4j2Application on USNQYV2Z18HRA1K with PID 3032 (F:\git\Spring-Boot\demo\3.logs\log4j2\target\classes started by Administrator in F:\git\Spring-Boot\demo)
+[22:38:32:086] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:666) - The following profiles are active: dev
+[22:38:32:108] [INFO] - org.hibernate.validator.internal.util.Version.<clinit>(Version.java:30) - HV000001: Hibernate Validator 5.2.5.Final
+[22:38:32:154] [INFO] - org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582) - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e7d0b9e: startup date [Tue May 22 22:38:32 CST 2018]; root of context hierarchy
+[22:38:33:571] [INFO] - org.eclipse.jetty.util.log.Log.initialized(Log.java:192) - Logging initialized @4396ms
+[22:38:33:765] [INFO] - org.springframework.boot.context.embedded.jetty.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer(JettyEmbeddedServletContainerFactory.java:173) - Server initialized with port: 80
+[22:38:33:767] [INFO] - org.eclipse.jetty.server.Server.doStart(Server.java:346) - jetty-9.3.18.v20170406
+[22:38:33:900] [INFO] - org.eclipse.jetty.server.handler.ContextHandler$Context.log(ContextHandler.java:2167) - Initializing Spring embedded WebApplicationContext
+[22:38:33:900] [INFO] - org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.prepareEmbeddedWebApplicationContext(EmbeddedWebApplicationContext.java:276) - Root WebApplicationContext: initialization completed in 1751 ms
+[22:38:34:063] [INFO] - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup(ServletRegistrationBean.java:190) - Mapping servlet: 'dispatcherServlet' to [/]
+[22:38:34:075] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'characterEncodingFilter' to: [/*]
+[22:38:34:075] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[22:38:34:075] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[22:38:34:075] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'requestContextFilter' to: [/*]
+[22:38:34:393] [INFO] - org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:781) - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@6883f42e{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.5243716165569743450.80/],AVAILABLE}
+[22:38:34:394] [INFO] - org.eclipse.jetty.server.Server.doStart(Server.java:414) - Started @5210ms
+[22:38:35:008] [INFO] - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:534) - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e7d0b9e: startup date [Tue May 22 22:38:32 CST 2018]; root of context hierarchy
+[22:38:35:196] [INFO] - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:543) - Mapped "{[/** || /],methods=[GET]}" onto public java.lang.Long com.example.web.LogsController.creatLogs()
+[22:38:35:201] [INFO] - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:543) - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[22:38:35:202] [INFO] - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:543) - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[22:38:35:271] [INFO] - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:362) - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[22:38:35:271] [INFO] - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:362) - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[22:38:35:355] [INFO] - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:362) - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[22:38:35:595] [INFO] - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+[22:38:35:696] [INFO] - org.springframework.jmx.export.MBeanExporter.afterSingletonsInstantiated(MBeanExporter.java:431) - Registering beans for JMX exposure on startup
+[22:38:35:845] [INFO] - org.eclipse.jetty.server.handler.ContextHandler$Context.log(ContextHandler.java:2167) - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[22:38:35:846] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489) - FrameworkServlet 'dispatcherServlet': initialization started
+[22:38:35:926] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508) - FrameworkServlet 'dispatcherServlet': initialization completed in 79 ms
+[22:38:35:968] [INFO] - org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:278) - Started ServerConnector@526b21a1{HTTP/1.1,[http/1.1]}{0.0.0.0:80}
+[22:38:35:971] [INFO] - org.springframework.boot.context.embedded.jetty.JettyEmbeddedServletContainer.start(JettyEmbeddedServletContainer.java:144) - Jetty started on port(s) 80 (http/1.1)
+[22:38:35:976] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started Log4j2Application in 4.317 seconds (JVM running for 6.792)
+[22:39:38:898] [INFO] - org.hibernate.validator.internal.util.Version.<clinit>(Version.java:30) - HV000001: Hibernate Validator 5.2.5.Final
+[22:39:38:997] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting Log4j2Application on USNQYV2Z18HRA1K with PID 4852 (F:\git\Spring-Boot\demo\3.logs\log4j2\target\classes started by Administrator in F:\git\Spring-Boot\demo)
+[22:39:38:997] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:666) - The following profiles are active: dev
+[22:39:39:046] [INFO] - org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582) - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a7d9b4d: startup date [Tue May 22 22:39:39 CST 2018]; root of context hierarchy
+[22:39:40:247] [INFO] - org.eclipse.jetty.util.log.Log.initialized(Log.java:192) - Logging initialized @4309ms
+[22:39:40:397] [INFO] - org.springframework.boot.context.embedded.jetty.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer(JettyEmbeddedServletContainerFactory.java:173) - Server initialized with port: 80
+[22:39:40:398] [INFO] - org.eclipse.jetty.server.Server.doStart(Server.java:346) - jetty-9.3.18.v20170406
+[22:39:40:541] [INFO] - org.eclipse.jetty.server.handler.ContextHandler$Context.log(ContextHandler.java:2167) - Initializing Spring embedded WebApplicationContext
+[22:39:40:541] [INFO] - org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.prepareEmbeddedWebApplicationContext(EmbeddedWebApplicationContext.java:276) - Root WebApplicationContext: initialization completed in 1498 ms
+[22:39:40:654] [INFO] - org.springframework.boot.web.servlet.ServletRegistrationBean.onStartup(ServletRegistrationBean.java:190) - Mapping servlet: 'dispatcherServlet' to [/]
+[22:39:40:654] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'characterEncodingFilter' to: [/*]
+[22:39:40:654] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[22:39:40:664] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[22:39:40:664] [INFO] - org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:258) - Mapping filter: 'requestContextFilter' to: [/*]
+[22:39:40:987] [INFO] - org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:781) - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@31344136{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.8346658608860598214.80/],AVAILABLE}
+[22:39:40:988] [INFO] - org.eclipse.jetty.server.Server.doStart(Server.java:414) - Started @5050ms
+[22:39:41:254] [INFO] - org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:534) - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a7d9b4d: startup date [Tue May 22 22:39:39 CST 2018]; root of context hierarchy
+[22:39:41:309] [INFO] - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:543) - Mapped "{[/** || /],methods=[GET]}" onto public java.lang.Long com.example.web.LogsController.creatLogs()
+[22:39:41:311] [INFO] - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:543) - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[22:39:41:311] [INFO] - org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:543) - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[22:39:41:342] [INFO] - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:362) - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[22:39:41:342] [INFO] - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:362) - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[22:39:41:380] [INFO] - org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:362) - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[22:39:41:498] [INFO] - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+[22:39:41:548] [INFO] - org.springframework.jmx.export.MBeanExporter.afterSingletonsInstantiated(MBeanExporter.java:431) - Registering beans for JMX exposure on startup
+[22:39:41:565] [INFO] - org.eclipse.jetty.server.handler.ContextHandler$Context.log(ContextHandler.java:2167) - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[22:39:41:565] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489) - FrameworkServlet 'dispatcherServlet': initialization started
+[22:39:41:584] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508) - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+[22:39:41:610] [INFO] - org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:278) - Started ServerConnector@160f946d{HTTP/1.1,[http/1.1]}{0.0.0.0:80}
+[22:39:41:610] [INFO] - org.springframework.boot.context.embedded.jetty.JettyEmbeddedServletContainer.start(JettyEmbeddedServletContainer.java:144) - Jetty started on port(s) 80 (http/1.1)
+[22:39:41:610] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started Log4j2Application in 3.862 seconds (JVM running for 5.681)

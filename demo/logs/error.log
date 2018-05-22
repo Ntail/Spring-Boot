@@ -1,0 +1,105 @@
+[22:28:00:234] [ERROR] -org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:370) -Properties configuration failed validation
+[22:28:00:234] [ERROR] -org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:373) -Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:28:00:321] [ERROR] -org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:42) -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.autoconfigure.jackson.JacksonProperties@46a7f1ff failed:
+
+    Property: spring.jackson.timeZone
+    Value: Asia/Wuhan
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]
+
+
+Action:
+
+Update your application's configuration
+
+[22:31:59:689] [ERROR] -org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:370) -Properties configuration failed validation
+[22:31:59:714] [ERROR] -org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:373) -Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:31:59:814] [ERROR] -org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:42) -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.autoconfigure.jackson.JacksonProperties@1f6b102b failed:
+
+    Property: spring.jackson.timeZone
+    Value: Asia/Wuhan
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]
+
+
+Action:
+
+Update your application's configuration
+
+[22:32:25:283] [ERROR] -org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:370) -Properties configuration failed validation
+[22:32:25:283] [ERROR] -org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:373) -Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:32:25:318] [ERROR] -org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:42) -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.autoconfigure.jackson.JacksonProperties@c47e030 failed:
+
+    Property: spring.jackson.timeZone
+    Value: Asia/Wuhan
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]
+
+
+Action:
+
+Update your application's configuration
+
+[22:36:44:621] [ERROR] - org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:370) - Properties configuration failed validation
+[22:36:44:622] [ERROR] - org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:373) - Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:36:44:647] [ERROR] - org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:42) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.autoconfigure.jackson.JacksonProperties@2b90173d failed:
+
+    Property: spring.jackson.timeZone
+    Value: Asia/Wuhan
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]
+
+
+Action:
+
+Update your application's configuration
+
+[22:37:03:639] [ERROR] - org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:370) - Properties configuration failed validation
+[22:37:03:639] [ERROR] - org.springframework.boot.bind.PropertiesConfigurationFactory.validate(PropertiesConfigurationFactory.java:373) - Field error in object 'spring.jackson' on field 'timeZone': rejected value [Asia/Wuhan]; codes [typeMismatch.spring.jackson.timeZone,typeMismatch.timeZone,typeMismatch.java.util.TimeZone,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.jackson.timeZone,timeZone]; arguments []; default message [timeZone]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]]
+[22:37:03:675] [ERROR] - org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:42) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.autoconfigure.jackson.JacksonProperties@8017eca failed:
+
+    Property: spring.jackson.timeZone
+    Value: Asia/Wuhan
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.util.TimeZone' for property 'timeZone'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.TimeZone]
+
+
+Action:
+
+Update your application's configuration
+

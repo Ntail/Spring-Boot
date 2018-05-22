@@ -1,4 +1,4 @@
-package com.example.logback;
+package com.example;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
