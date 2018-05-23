@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/logs/log4j2/pom.xml" />
         <option value="$PROJECT_DIR$/logs/logback/pom.xml" />
         <option value="$PROJECT_DIR$/3.logs/pom.xml" />
+        <option value="$PROJECT_DIR$/4.scheduled/pom.xml" />
       </list>
     </option>
   </component>
