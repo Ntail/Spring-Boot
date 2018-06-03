@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="4.scheduled" />
+        <module name="5.Async" />
+        <module name="6.globalException" />
         <module name="demo" />
         <module name="log4j" />
         <module name="log4j2" />
@@ -19,6 +21,8 @@
     <bytecodeTargetLevel>
       <module name="3.logs" target="1.8" />
       <module name="4.scheduled" target="1.8" />
+      <module name="5.Async" target="1.8" />
+      <module name="6.globalException" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="log4j" target="1.8" />
       <module name="log4j2" target="1.8" />

@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/4.scheduled/4.scheduled.iml" filepath="$PROJECT_DIR$/4.scheduled/4.scheduled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5.Async/5.Async.iml" filepath="$PROJECT_DIR$/5.Async/5.Async.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6.globalException/6.globalException.iml" filepath="$PROJECT_DIR$/6.globalException/6.globalException.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/3.logs/log4j/log4j.iml" filepath="$PROJECT_DIR$/3.logs/log4j/log4j.iml" />
       <module fileurl="file://$PROJECT_DIR$/3.logs/log4j2/log4j2.iml" filepath="$PROJECT_DIR$/3.logs/log4j2/log4j2.iml" />

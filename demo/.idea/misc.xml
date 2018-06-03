@@ -16,6 +16,8 @@
         <option value="$PROJECT_DIR$/logs/logback/pom.xml" />
         <option value="$PROJECT_DIR$/3.logs/pom.xml" />
         <option value="$PROJECT_DIR$/4.scheduled/pom.xml" />
+        <option value="$PROJECT_DIR$/5.Async/pom.xml" />
+        <option value="$PROJECT_DIR$/6.globalException/pom.xml" />
       </list>
     </option>
   </component>
